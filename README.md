@@ -13,6 +13,16 @@ chmod +x install.sh
 
 ## What's Included
 
+### Shell (`.zshrc`)
+
+ZSH configuration with:
+- Oh-My-Zsh plugins (git, docker, fzf, autosuggestions, syntax-highlighting)
+- Common aliases (`ll`, `la`, docker, git shortcuts)
+- Modern CLI replacements (eza, bat, fd, rg) when available
+- Claude Code shortcuts (`c`, `cc`, `cr`)
+- FZF configuration
+- Helper functions (`mkcd`, `ff`, `dsh`)
+
 ### Claude Code (`.claude/`)
 
 Global configuration for Claude Code CLI.
