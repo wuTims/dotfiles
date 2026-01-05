@@ -143,6 +143,7 @@ uv run mypy .              # Type check
 
 ### Never
 - Commit `.env` files or secrets
+- Output secrets, API keys, tokens, or credentials in plain text (redact with `***` or describe without exposing)
 - Run `rm -rf` without confirmation
 - Force push to main/master
 - Skip tests to save time
