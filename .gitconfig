@@ -1,0 +1,36 @@
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
+
+[push]
+    autoSetupRemote = true
+
+[core]
+    autocrlf = input
+    editor = code --wait
+
+[diff]
+    colorMoved = default
+
+[merge]
+    conflictstyle = diff3
+
+[rerere]
+    enabled = true
+
+[alias]
+    st = status
+    co = checkout
+    cb = checkout -b
+    br = branch
+    ci = commit
+    cm = commit -m
+    ca = commit --amend
+    can = commit --amend --no-edit
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    lg = log --oneline --graph --decorate
+    undo = reset --soft HEAD~1
+    wip = !git add -A && git commit -m 'WIP'

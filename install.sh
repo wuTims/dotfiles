@@ -58,6 +58,7 @@ link_dotfile() {
 # ============================================
 echo "Claude Code:"
 link_dotfile "$SCRIPT_DIR/.claude" "$HOME/.claude" ".claude/"
+link_dotfile "$SCRIPT_DIR/.claude.json" "$HOME/.claude.json" ".claude.json (MCP servers)"
 
 # ============================================
 # Shell Configuration
@@ -67,12 +68,11 @@ echo "Shell:"
 link_dotfile "$SCRIPT_DIR/.zshrc" "$HOME/.zshrc" ".zshrc"
 
 # ============================================
-# Git Configuration (optional)
+# Git Configuration
 # ============================================
-# Uncomment to enable:
-# echo ""
-# echo "Git:"
-# link_dotfile "$SCRIPT_DIR/.gitconfig" "$HOME/.gitconfig" ".gitconfig"
+echo ""
+echo "Git:"
+link_dotfile "$SCRIPT_DIR/.gitconfig" "$HOME/.gitconfig" ".gitconfig"
 
 # ============================================
 # Summary
