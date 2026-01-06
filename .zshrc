@@ -22,6 +22,7 @@ ZSH_THEME="robbyrussell"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.claude/bin:$PATH"
 export PATH="$HOME/.bun/bin:$PATH"
+export PATH="$HOME/.fzf/bin:$PATH"
 
 # ============================================
 # Editor
@@ -136,6 +137,12 @@ SAVEHIST=50000
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 setopt SHARE_HISTORY
+
+# ============================================
+# FZF base path (needed before oh-my-zsh loads fzf plugin)
+# Use git-installed fzf at ~/.fzf for latest features
+# ============================================
+export FZF_BASE="$HOME/.fzf"
 
 # ============================================
 # Load Oh-My-Zsh (if installed)
