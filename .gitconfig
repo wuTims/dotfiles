@@ -34,3 +34,4 @@
     lg = log --oneline --graph --decorate
     undo = reset --soft HEAD~1
     wip = !git add -A && git commit -m 'WIP'
+

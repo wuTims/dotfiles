@@ -151,3 +151,10 @@ export ZSH="$HOME/.oh-my-zsh"
 if [ -f "$ZSH/oh-my-zsh.sh" ]; then
     source "$ZSH/oh-my-zsh.sh"
 fi
+# Python dev tools
+alias activate-dev="source ~/.dev-tools/bin/activate"
+# Auto-activate project venv if exists
+auto_activate_venv() { [[ -f .venv/bin/activate ]] && source .venv/bin/activate }
+chpwd_functions+=(auto_activate_venv)
+
+

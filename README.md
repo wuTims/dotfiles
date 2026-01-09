@@ -59,6 +59,14 @@ ln -sf "$SCRIPT_DIR/.gitconfig" "$HOME/.gitconfig"
 
 ## Claude Code Configuration
 
+### MCP Servers
+
+MCP servers are configured in `~/.claude.json` (not included in dotfiles as it contains user-specific data). To add the DeepWiki MCP server:
+
+```bash
+claude mcp add deepwiki --transport http --url https://mcp.deepwiki.com/mcp
+```
+
 ### Hierarchy
 
 ```

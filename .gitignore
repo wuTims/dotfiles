@@ -12,7 +12,24 @@
 .vscode/
 *.sublime-*
 
-# Claude Code local settings (machine-specific)
+# Claude Code local/sensitive files
+.claude/.credentials.json
+.claude/cache/
+.claude/config/
+.claude/debug/
+.claude/file-history/
+.claude/history.jsonl
+.claude/ide/
+.claude/paste-cache/
+.claude/plans/
+.claude/plugins/
+.claude/projects/
+.claude/shell-snapshots/
+.claude/stats-cache.json
+.claude/statsig/
+.claude/todos/
+.claude/session-env/
+.claude/telemetry/
 claude/settings.local.json
 
 # Secrets (should never be committed)
@@ -22,6 +39,9 @@ claude/settings.local.json
 *.key
 credentials*
 secrets*
+
+# Claude Code user-specific data (contains account info, local paths, caches)
+.claude.json
 
 # Python (if any scripts added)
 __pycache__/
